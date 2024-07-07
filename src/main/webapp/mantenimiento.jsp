@@ -40,7 +40,7 @@
             margin: 10px 0 5px;
             color: #333;
         }
-        .container input, .container select, .container textarea {
+        .container input, .container textarea {
             width: calc(100% - 20px);
             padding: 10px;
             margin: 5px 0 10px 0;
@@ -73,32 +73,20 @@
     <div class="container">
         <h2>Mantenimiento de Pacientes</h2>
         <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            
-            <label for="apellidos">Apellidos:</label>
-            <input type="text" id="apellidos" name="apellidos" required>
-            
-            <label for="sexo">Sexo:</label>
-            <select id="sexo" name="sexo" required>
-                <option value="M">M</option>
-                <option value="F">F</option>
-            </select>
-            
-            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
-            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
-            
             <label for="numDocumento">Número de Cédula:</label>
             <input type="text" id="numDocumento" name="numDocumento" required>
             
-            <label for="direccion">Dirección:</label>
-            <textarea id="direccion" name="direccion" rows="3" required></textarea>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
             
             <label for="telefono">Teléfono:</label>
             <input type="text" id="telefono" name="telefono" required>
             
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" name="direccion" rows="3" required></textarea>
             
             <div class="button-group">
                 <button type="button">Nuevo</button>
