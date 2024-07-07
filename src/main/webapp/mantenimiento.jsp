@@ -72,49 +72,41 @@
 <body>
     <div class="container">
         <h2>Mantenimiento de Pacientes</h2>
-        <%
-            String action = request.getParameter("action");
-            String cedula = request.getParameter("cedula");
-            String nombre = request.getParameter("nombre");
-            String edad = request.getParameter("edad");
-            String contacto = request.getParameter("contacto");
-            String residencia = request.getParameter("residencia");
-
-            Connection conn = null;
-            PreparedStatement ps = null;
-
-            if ("save".equals(action)) {
-                try {
-                    Class.forName("com.mysql.cj.jdbc.Driver");
-                    conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/sistema_pacientes", "root", "filadelfia26");
-                    String sql = "INSERT INTO pacientes (cedula, nombre, edad, contacto, residencia) VALUES (?, ?, ?, ?, ?)";
-                    ps = conn.prepareStatement(sql);
-                    ps.setString(1, cedula);
-                    ps.setString(2, nombre);
-                    ps.setInt(3, Integer.parseInt(edad));
-                    ps.setString(4, contacto);
-                    ps.setString(5, residencia);
-                    int rowsInserted = ps.executeUpdate();
-                    if (rowsInserted > 0) {
-                        out.println("<script>alert('Paciente guardado exitosamente');</script>");
-                    } else {
-                        out.println("<script>alert('No se pudo guardar el paciente');</script>");
-                    }
-                } catch (ClassNotFoundException e) {
-                    out.println("<script>alert('Error: No se encontró el driver JDBC');</script>");
-                    e.printStackTrace();
-                } catch (SQLException e) {
-                    out.println("<script>alert('Error de SQL: " + e.getMessage() + "');</script>");
-                    e.printStackTrace();
-                } finally {
-                    try {
-                        if (ps != null) ps.close();
-                        if (conn != null) conn.close();
-                    } catch (SQLException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        %>
-        <form action="mantenimiento.jsp" method="post">
-          
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+            
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="M">M</option>
+                <option value="F">F</option>
+            </select>
+            
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            
+            <label for="numDocumento">Número de Cédula:</label>
+            <input type="text" id="numDocumento" name="numDocumento" required>
+            
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" name="direccion" rows="3" required></textarea>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <div class="button-group">
+                <button type="button">Nuevo</button>
+                <button type="submit">Guardar</button>
+                <button type="button">Editar</button>
+                <button type="button">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
