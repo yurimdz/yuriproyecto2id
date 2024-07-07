@@ -44,11 +44,11 @@
 </head>
 <body>
     <div class="container">
-        <img webapp="foto.jpg" alt="Foto del autor">
+        <img webapp="foto.jpg" alt="Foto">
         <h2>Derechos de Autor</h2>
         <p>Este sistema fue desarrollado por:</p>
         <ul>
-            <li>Yuridia Mendoza Rodríguez C34880</li>
+            <h3>Yuridia Mendoza Rodríguez C34880</h3>
         </ul>
         <p>&copy; 2024 Todos los derechos reservados.</p>
     </div>

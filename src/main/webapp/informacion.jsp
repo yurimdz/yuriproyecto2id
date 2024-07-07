@@ -45,6 +45,19 @@
         .container ul li {
             margin-bottom: 10px;
         }
+        .container button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .container button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -72,6 +85,8 @@
             <li>Asiste a todas tus citas médicas y realiza los exámenes recomendados.</li>
             <li>Cuida tus pies, mantén una buena higiene y revisa cualquier herida o cambio en la piel.</li>
         </ul>
+        
+        <button onclick="window.print()">Imprimir Información</button>
     </div>
 </body>
 </html>

@@ -44,7 +44,7 @@
 </head>
 <body>
     <div class="container">
-        <img src="foto.jpg" alt="Foto del autor">
+        <img webapp="foto.jpg" alt="Foto del autor">
         <h2>Derechos de Autor</h2>
         <p>Este sistema fue desarrollado por:</p>
         <ul>
