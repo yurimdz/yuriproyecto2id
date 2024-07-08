@@ -72,7 +72,7 @@
 <body>
     <div class="container">
         <h2>Mantenimiento de Pacientes</h2>
-        <form action="agregarUsuario.jsp" method="post">
+        <form action="manejoPacientes.jsp" method="post">
             <label for="cedula">Cédula:</label>
             <input type="text" id="cedula" name="cedula" required>
             
@@ -89,10 +89,10 @@
             <textarea id="residencia" name="residencia" rows="3" required></textarea>
             
             <div class="button-group">
-                <button type="button">Nuevo</button>
-                <button type="submit">Guardar</button>
-                <button type="button">Editar</button>
-                <button type="button">Cancelar</button>
+                <button type="submit" name="action" value="Agregar">Guardar</button>
+                <button type="submit" name="action" value="Editar">Editar</button>
+                <button type="submit" name="action" value="Eliminar">Eliminar</button>
+                <button type="button" onclick="window.location.href='mantenimiento.jsp'">Cancelar</button>
             </div>
         </form>
     </div>
