@@ -82,9 +82,9 @@
         <h2>Contacto</h2>
         <div class="contact-info">
             <p><strong>Teléfono:</strong> +506 1234 5678</p>
-            <p><strong>Email:</strong> contacto@hospitaldiabetes.ac.cr</p>
+            <p><strong>Email:</strong> contacto@hospitalficticio.cr</p>
             <p><strong>Dirección:</strong> Avenida Central, San José, Costa Rica</p>
-            <p>Para cualquier consulta, por favor comuníquese con nosotros utilizando la información proporcionada.</p>
+            <p>Para cualquier consulta o para agendar una cita, por favor comuníquese con nosotros utilizando la información proporcionada.</p>
         </div>
     </div>
 </body>
