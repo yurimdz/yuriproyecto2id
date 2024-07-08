@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Sistema de Citas para Personas con Diabetes</title>
+    <title>Videos - Sistema de Citas para Personas con Diabetes</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -46,7 +46,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             border-radius: 5px;
             width: 90%;
-            max-width: 600px;
+            max-width: 800px;
             margin: auto;
             margin-top: 20px;
             text-align: center;
@@ -56,13 +56,15 @@
             margin-top: 0;
             color: #333;
         }
-        .contact-info {
+        .video-container {
             margin-top: 20px;
-            color: #333;
-            text-align: left;
         }
-        .contact-info p {
-            margin: 10px 0;
+        video {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -79,12 +81,12 @@
         </div>
     </div>
     <div class="container">
-        <h2>Contacto</h2>
-        <div class="contact-info">
-            <p><strong>Teléfono:</strong> +506 1234 5678</p>
-            <p><strong>Email:</strong> contacto@hospitaldiabetes.ac.cr</p>
-            <p><strong>Dirección:</strong> Avenida Central, San José, Costa Rica</p>
-            <p>Para cualquier consulta, por favor comuníquese con nosotros utilizando la información proporcionada.</p>
+        <h2>Videos Informativos</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="videos/mi_video.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
         </div>
     </div>
 </body>
