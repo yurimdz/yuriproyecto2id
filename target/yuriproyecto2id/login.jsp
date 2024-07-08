@@ -8,7 +8,6 @@
 String entrada_usuario = request.getParameter("username");
 String entrada_contrasena = request.getParameter("password");
 
-
 String URL = "jdbc:mysql://localhost:3306/sistema_pacientes?useUnicode=true&characterEncoding=utf8";
 String nombreUsuario = "root";
 String nombreClave = "filadelfia26";
@@ -19,7 +18,7 @@ ResultSet rs = null;
 
     try {
         Class.forName("com.mysql.jdbc.Driver");
-       conn = DriverManager.getConnection(URL, nombreUsuario, nombreClave);
+        conn = DriverManager.getConnection(URL, nombreUsuario, nombreClave);
 
         String sql = "SELECT * FROM usuarios WHERE login = ? AND clave = ?";
         stmt = conn.prepareStatement(sql);
@@ -30,7 +29,7 @@ ResultSet rs = null;
         if (rs.next()) {
             response.sendRedirect("menu.jsp");
         } else {
-            out.println("<p style='color:red;'>Usuario o contraseña incorrectos</p>");
+            out.println("<div style='color: #D8000C; background-color: #FFBABA; border: 1px solid #D8000C; padding: 10px; margin-top: 20px; text-align: center; font-family: Arial, sans-serif; border-radius: 5px;'>Usuario o contraseña incorrectos</div>");
         }
     } catch (SQLException e) {
         e.printStackTrace();
@@ -39,5 +38,4 @@ ResultSet rs = null;
         if (stmt != null) try { stmt.close(); } catch (SQLException e) { e.printStackTrace(); }
         if (conn != null) try { conn.close(); } catch (SQLException e) { e.printStackTrace(); }
     }
-
 %>
