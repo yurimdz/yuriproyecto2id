@@ -48,7 +48,7 @@
         <h2>Derechos de Autor</h2>
         <p>Este sistema fue desarrollado por:</p>
         <ul>
-            <h3>Yuridia Mendoza Rodríguez C34880</h3>
+            <li>Yuridia Mendoza Rodríguez C34880</li>
         </ul>
         <p>&copy; 2024 Todos los derechos reservados.</p>
     </div>

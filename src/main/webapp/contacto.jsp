@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Citas para Personas con Diabetes</title>
+    <title>Contacto - Sistema de Citas para Personas con Diabetes</title>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -40,24 +40,29 @@
         .navbar a:hover {
             color: #ffcc00;
         }
-        .content {
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
-            text-align: center;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .content h1 {
-            color: #333;
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        .content p {
-            color: #555;
-            font-size: 18px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            width: 90%;
             max-width: 600px;
+            margin: auto;
+            margin-top: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .container h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .contact-info {
+            margin-top: 20px;
+            color: #333;
+            text-align: left;
+        }
+        .contact-info p {
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -73,9 +78,14 @@
             <a href="index.jsp">Cerrar Sesión</a>
         </div>
     </div>
-    <div class="content">
-        <h1>Bienvenido al Sistema de Citas para Personas con Diabetes</h1>
-        <p>Seleccione una opción del menú para continuar.</p>
+    <div class="container">
+        <h2>Contacto</h2>
+        <div class="contact-info">
+            <p><strong>Teléfono:</strong> +506 1234 5678</p>
+            <p><strong>Email:</strong> contacto@hospitalficticio.cr</p>
+            <p><strong>Dirección:</strong> Avenida Central, San José, Costa Rica</p>
+            <p>Para cualquier consulta o para agendar una cita, por favor comuníquese con nosotros utilizando la información proporcionada.</p>
+        </div>
     </div>
 </body>
 </html>
