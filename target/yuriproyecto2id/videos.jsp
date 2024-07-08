@@ -81,7 +81,7 @@
         </div>
     </div>
     <div class="container">
-        <h2>Video Funcionamiento</h2>
+        <h2>Videos Informativos</h2>
         <div class="video-container">
             <video controls>
                 <source src="videos/mi_video.mp4" type="video/mp4">
